@@ -1,0 +1,91 @@
+.App {
+  background-color: rgb(203, 203, 203);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .app-container {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    height: 70%;
+    .header {
+      font-size: 2rem;
+      color: gray;
+      text-decoration: none;
+    }
+    form {
+      display: flex;
+      gap: 5px;
+      .task {
+        flex: 1;
+        border: 0;
+        outline: none;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.5);
+      }
+      .submit {
+        border-radius: 10px;
+        outline: none;
+        cursor: pointer;
+        &:hover {
+          background-color: rgb(195, 197, 236);
+        }
+        &:active {
+          opacity: 0.5;
+        }
+      }
+    }
+    .task-list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      .task-container {
+        display: flex;
+        align-items: center;
+        padding: 3px 3px 10px 0px;
+        justify-content: space-between;
+        border-bottom: 1px solid gray;
+        .text-container {
+          display: flex;
+          align-items: center;
+          gap: 3px;
+          .text {
+            border: none;
+            width: 100%;
+            outline: none;
+          }
+        }
+        .action {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          cursor: pointer;
+          .green {
+            color: green;
+            &:hover {
+              color: rgb(167, 241, 167);
+            }
+            &:active {
+              opacity: 0.5;
+            }
+          }
+          .red {
+            color: red;
+            &:hover {
+              color: rgb(237, 165, 165);
+            }
+            &:active {
+              opacity: 0.5;
+            }
+          }
+        }
+      }
+    }
+  }
+}
